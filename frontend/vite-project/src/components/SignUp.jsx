@@ -34,7 +34,7 @@ export default function SignUp() {
         <img 
           src="/Gwen-removebg-preview.png" 
           alt="Gwen" 
-          className="absolute top-0 left-50 w-[480px] h-auto" 
+          className="absolute top-0 left-50 w-[380px] h-auto" 
         />
       </div>
       {/* Right Section - Sign Up Form */}
