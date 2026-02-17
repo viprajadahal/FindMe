@@ -24,19 +24,23 @@ export default function SignUp() {
     e.preventDefault();
     // Add your sign-up logic here
     console.log('Form submitted:', formData);
+    // Navigate to profile setup after successful signup
+    navigate('/profile-setup');
   };
 
   return (
     <div className="flex h-screen overflow-hidden font-sans">
-      {/* Left Side - Branding & Spiderman Image */}
-      <div className="w-1/2 bg-[#410200] flex flex-col items-center justify-center text-white overflow-hidden">
-        {/* Added the Spiderman Image here */}
-        <img 
-          src="/Gwen-removebg-preview.png" 
-          alt="Gwen" 
-          className="absolute top-0 left-50 w-[380px] h-auto" 
-        />
+      {/* Left Section - Image Placeholder */}
+      <div className="flex-1 flex items-center justify-start pl-20 relative overflow-hidden" style={{ background: '#410200' }}>
+        <div className="relative">
+          {/* Your images will go here - they'll start from the left and flow right */}
+          <img src="Gwen-removebg-preview.png" 
+          alt="Spider Gwen" 
+          className="top-0  left-150 w-[380px] h-auto"
+         />
+        </div>
       </div>
+
       {/* Right Section - Sign Up Form */}
       <div className="flex-1 flex items-center justify-center p-10 overflow-y-auto" style={{ background: '#FFF1CF' }}>
         <div className="w-full max-w-[400px]">
