@@ -34,10 +34,6 @@ export default function SignUp() {
       <div className="flex-1 flex items-center justify-start pl-20 relative overflow-hidden" style={{ background: '#410200' }}>
         <div className="relative">
           {/* Your images will go here - they'll start from the left and flow right */}
-          <img src="Gwen-removebg-preview.png" 
-          alt="Spider Gwen" 
-          className="top-0  left-150 w-[380px] h-auto"
-         />
         </div>
       </div>
 

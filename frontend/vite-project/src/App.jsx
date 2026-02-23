@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import LogIn from './components/LogIn'
 import SignUp from './components/SignUp'
 import ProfileSetup from './components/ProfileSetup'
-
+import ForgotPassword from './components/ForgetPassword'
 function App() {
   return (
     <Router>
@@ -11,9 +11,10 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/profile-setup" element={<ProfileSetup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </Router>
   )
 }
 
-export default App
+export default App 
