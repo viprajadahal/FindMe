@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import LogIn from './components/LogIn'
 import SignUp from './components/SignUp'
 import ProfileSetup from './components/ProfileSetup'
-import ForgotPassword from './components/ForgetPassword'
+import ForgetPassword from './components/ForgetPassword'
+import Dashboard from './components/Dashboard.jsx'
 function App() {
   return (
     <Router>
@@ -11,8 +12,9 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/profile-setup" element={<ProfileSetup />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-      </Routes>
+        <Route path="/forget-password" element={<ForgetPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+     </Routes>
     </Router>
   )
 }
