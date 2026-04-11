@@ -105,22 +105,24 @@ export default function Dashboard() {
         <p className="text-xs font-medium mb-2" style={{ color: '#7B3A00', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
           your stats
         </p>
-        <div className="grid grid-cols-2 gap-3 mb-6">
-          <div className="bg-white rounded-xl p-4" style={{ border: '0.5px solid #e0d5c0' }}>
-            <div className="text-2xl font-medium" style={{ color: '#410200' }}>{answeredCount}</div>
-            <div className="text-xs mt-1" style={{ color: '#7B3A00' }}>answered</div>
-          </div>
-          <div
-            className="rounded-xl p-4 cursor-pointer hover:opacity-90 transition-opacity"
-            style={{ background: '#410200' }}
-            onClick={() => navigate('/choose-specifics')}
-          >
-            <div className="text-2xl font-medium text-white">{matchCount}</div>
-            <div className="text-xs mt-1" style={{ color: '#FAC775' }}>
-              matched · choose specifics →
-            </div>
-          </div>
+              <div className="grid grid-cols-3 gap-3 mb-6">
+        <div className="bg-white rounded-xl p-4" style={{ border: '0.5px solid #e0d5c0' }}>
+          <div className="text-2xl font-medium" style={{ color: '#410200' }}>{answeredCount}</div>
+          <div className="text-xs mt-1" style={{ color: '#7B3A00' }}>answered</div>
         </div>
+        <div className="bg-white rounded-xl p-4" style={{ border: '0.5px solid #e0d5c0' }}>
+          <div className="text-2xl font-medium" style={{ color: '#410200' }}>{matchCount}</div>
+          <div className="text-xs mt-1" style={{ color: '#7B3A00' }}>matched</div>
+        </div>
+        <div
+          className="rounded-xl p-4 cursor-pointer hover:opacity-90 transition-opacity"
+          style={{ background: '#410200' }}
+          onClick={() => navigate('/choose-specifics')}
+        >
+          <div className="text-2xl font-medium text-white">→</div>
+          <div className="text-xs mt-1" style={{ color: '#FAC775' }}>choose specifics</div>
+        </div>
+      </div>
 
         {/* Match Banner */}
         {matchShown && latestMatch && (

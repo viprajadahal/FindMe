@@ -5,8 +5,6 @@ export default function SignUp() {
   const navigate = useNavigate();
   
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
     email: '',
     username: '',
     password: '',
@@ -45,63 +43,7 @@ export default function SignUp() {
           </h1>
 
           <form onSubmit={handleSubmit}>
-            {/* Name Fields */}
-            <div className="flex gap-4 mb-0">
-              <div className="flex-1 mb-6">
-                <label className="block text-base font-medium mb-2" style={{ color: '#2d1810' }}>
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="Enter first name"
-                  className="w-full px-4 py-3.5 text-[15px] border-2 rounded-lg bg-white outline-none transition-all focus:shadow-lg"
-                  style={{ 
-                    borderColor: '#d4c5a9',
-                    color: '#2d1810'
-                  }}
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#410200';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(65, 2, 0, 0.1)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '#d4c5a9';
-                    e.target.style.boxShadow = 'none';
-                  }}
-                  required
-                />
-              </div>
-
-              <div className="flex-1 mb-6">
-                <label className="block text-base font-medium mb-2" style={{ color: '#2d1810' }}>
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Enter last name"
-                  className="w-full px-4 py-3.5 text-[15px] border-2 rounded-lg bg-white outline-none transition-all focus:shadow-lg"
-                  style={{ 
-                    borderColor: '#d4c5a9',
-                    color: '#2d1810'
-                  }}
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#410200';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(65, 2, 0, 0.1)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '#d4c5a9';
-                    e.target.style.boxShadow = 'none';
-                  }}
-                  required
-                />
-              </div>
-            </div>
-
+           
             {/* Email */}
             <div className="mb-6">
               <label className="block text-base font-medium mb-2" style={{ color: '#2d1810' }}>
@@ -113,34 +55,6 @@ export default function SignUp() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter email"
-                className="w-full px-4 py-3.5 text-[15px] border-2 rounded-lg bg-white outline-none transition-all focus:shadow-lg"
-                style={{ 
-                  borderColor: '#d4c5a9',
-                  color: '#2d1810'
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = '#410200';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(65, 2, 0, 0.1)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = '#d4c5a9';
-                  e.target.style.boxShadow = 'none';
-                }}
-                required
-              />
-            </div>
-
-            {/* Username */}
-            <div className="mb-6">
-              <label className="block text-base font-medium mb-2" style={{ color: '#2d1810' }}>
-                Username
-              </label>
-              <input
-                type="text"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-                placeholder="Enter username"
                 className="w-full px-4 py-3.5 text-[15px] border-2 rounded-lg bg-white outline-none transition-all focus:shadow-lg"
                 style={{ 
                   borderColor: '#d4c5a9',
